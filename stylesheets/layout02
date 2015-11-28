@@ -1,0 +1,1435 @@
+/* 
+#BDCC93 = Body Background Page.
+#11430D = H1 Main title and Sidebar Text
+#7B044B = Post Title
+#46512C = Post Content Text
+
+#589892 = Post Tags Meta Data
+#a4cd39 = Light Green Links:hover
+#6BB26B = Button light green ribbons
+*/
+
+
+/* #header, #sidebar, #main {border: 1px solid red;} */
+
+.trackingPixel 
+{
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}
+.clear {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+article { background-color: white; margin-bottom: 20px; width: 420px;}
+
+.ArticleWrapper {
+  width: 447px;
+  margin: 0px 0px 10px 0px;
+ /* float: left; 
+   border: 1px solid aqua; */
+}
+
+.AddLeafOnRight {
+    background: url('http://static.tumblr.com/cfv4iiv/Gzxmh7brs/ico-leafright.png') no-repeat left center;
+    padding: 0px 0px 0px 25px;
+}
+.AddLeafOnLeft 
+{
+    background: url('http://static.tumblr.com/cfv4iiv/jfzmh7bqp/ico-leafleft.png') no-repeat right center;
+}
+
+
+
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+ins {
+	background-color: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+mark {
+	background-color: #ff9;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+del {
+	text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+body 
+{
+    background: #2e3243 url(http://i.imgur.com/t4KnQZn.png), url(http://i.imgur.com/gKVKTEr.png);
+	background-repeat: repeat;
+    background-attachment: fixed;
+	font-size: 14px;
+	font-family: "ErnestineOffc", Arial, Helvetica, sans-serif;
+	line-height: 1.231;
+ *font-size: small;
+}
+pre, code, kbd, samp {
+	font-family: monospace, sans-serif;
+}
+html {
+	overflow-y: scroll;
+}
+ul, ol {
+	margin-left: 2em;
+}
+ol {
+	list-style-type: decimal;
+}
+td, td img {
+	vertical-align: top;
+}
+sub {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	bottom: -0.25em;
+}
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	top: -0.5em;
+}
+a:hover, a:active {
+	outline: none;
+}
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	white-space: pre-line;
+	word-wrap: break-word;
+	padding: 15px;
+}
+.ie7 img {
+	-ms-interpolation-mode: bicubic;
+}
+nav ul, nav li {
+	margin: 0;
+	list-style: none;
+	list-style-image: none;
+}
+body {
+	color: #46512C;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+a, a:active, a:visited {
+	color: #a4cd39;
+}
+a:hover {
+	color: #a4cd39;
+}
+b, strong, th {
+	font-weight: bold;
+}
+i, em {
+	font-style: italic;
+}
+small {
+	font-size: 85%;
+}
+
+
+.container {
+	margin: 0 auto;
+	width: 1300px;
+	position: relative;
+ *zoom: 1;
+    background: transparent url('http://static.tumblr.com/cfv4iiv/NXkmh7dnz/sidebar-background.png') repeat-y;
+    padding-top: 35px;
+}
+.container:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+/*
+#header 
+{
+	height: 1px;
+	position: absolute; 
+	z-index: 100;
+	border: 2px solid red;
+	left: 50%;
+	
+}
+*/
+#header { 
+  width: 1300px; 
+  margin: 0px auto; 
+  position: relative; 
+}
+
+#sidebar { 
+  position: relative; 
+  z-index: 10;
+  width: 275px;
+  padding-bottom: 143px;
+  float: left;
+}
+
+#sidebarBody {
+    /* background: url('http://static.tumblr.com/cfv4iiv/NXkmh7dnz/sidebar-background.png') repeat-y; */
+    padding: 0px 30px 0px 30px;
+    color: #11430D;
+}
+    
+#sidebarBottom {
+    position: absolute;
+    z-index: 10;
+	background: url('http://static.tumblr.com/cfv4iiv/xJQmh7dp7/sidebar-bottom.png') no-repeat;
+	height: 127px; width: 300px;
+	bottom: 0px;
+}
+
+
+#sidebar h1 {
+	padding: 25px 0px 0px 5px;
+	font-family: "TradeGothic-Bold", "TradeGothicLT-BoldCondTwenty";
+	font-size: 45px;
+	line-height: 40px;
+	font-weight: normal;
+	color: #11430D;
+	text-transform: uppercase;
+	/* text-shadow: #FFFFFF 0 1px 1px, #000000 0 -1px 0; */
+	top: 0px;
+}
+#sidebar h1 a, #sidebar h1 a:link, #sidebar h1 a:visited { color: #11430D; text-decoration: none; }
+#sidebar h1 a:hover { color: #a4cd39; text-decoration: none; }
+
+
+#sidebar .social {
+ *zoom: 1;
+	margin: 10px 0px;
+}
+#sidebar .social:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}
+#sidebar .social ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	overflow: hidden;
+ *zoom: 1;
+}
+#sidebar .social ul li {
+	list-style-image: none;
+	list-style-type: none;
+	margin-left: 0px;
+	white-space: nowrap;
+	display: inline;
+	float: left;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.ie6 #sidebar .social ul li, .ie7 #sidebar .social ul li, .ie8 #sidebar .social ul li {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+#sidebar .social ul li:first-child, #sidebar .social ul li.first {
+	padding-left: 0;
+}
+#sidebar .social ul li:last-child {
+	padding-right: 0;
+}
+#sidebar .social ul li.last {
+	padding-right: 0;
+}
+#sidebar .social li {
+	font-size: 100%;
+	line-height: 24px;
+}
+#sidebar .social a {
+	display: inline;
+	float: left;
+	color: #453e34;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 0 5px 0px 5px;
+}
+#sidebar .social #social_twitter a { }
+#sidebar .social #social_facebook a { }
+#sidebar .social #social_flickr a { }
+
+
+#searchresults {
+    margin: 0 0 15px 0;
+    /* text-shadow: 1px 3px 5px rgba(0,0,0, 0.5); */
+    font-size: 20px;
+}  
+    #searchresults .search_query {
+        font-weight: bold;
+    }
+                    
+    #searchresults .search_query:before {
+        content:'“';
+    }
+                    
+    #searchresults .search_query:after {
+        content:'”';
+    }
+    
+#searchWrapper {
+}
+    #search { width: 220px; }
+                    
+    #search-scope {
+        padding-top: 1px;
+        font-size: 11px;
+        text-align: left;
+        margin-bottom: 0px;
+        margin-left: 15px;
+    }
+                    
+        #search-scope input,
+        #search-scope label {
+            cursor: pointer;
+        }
+                        
+        #search form {
+            margin: 0;
+        }
+                            
+            #search form .query {
+                padding: 10px 0 10px 10px;
+                background: url('http://static.tumblr.com/cfv4iiv/Ngymh7dmp/search-textbox.png') no-repeat;
+                outline: none;
+                border: none;
+                width: 155px;
+                float: left;
+                height: 15px;
+            }
+                            
+            #search form .submit {
+                border: none;
+                padding: 0px;
+                margin: 0px;
+                float: left;
+                cursor: pointer;
+            }
+                            
+            #search form .submit:hover { }
+
+
+
+
+#sidebar h2 {
+	font-family: "TradeGothic-Bold", "TradeGothicLT-BoldCondTwenty";
+	font-size: 29px;
+	font-weight: normal;
+	color: #11430D;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	/* text-shadow: #FFFFFF 0 1px 0; */
+	margin: 10px 0 10px 0px;
+    
+}
+#sidebar .avatar {
+	width: 128px;
+	height: 128px;
+	display: block;
+	overflow: hidden;
+	z-index: 0;
+	margin-bottom: 20px;
+	padding: 0px;
+	border: 4px solid #11430D;
+}
+#sidebar .info {
+	margin: 0px;
+	padding: 0px;
+}
+    .infoDescription p {
+	    font-size: 120%;
+	    line-height: 1.4;
+	    color: #11430D;
+	    margin-bottom: 5px;
+	    /* text-shadow: #FFFFFF 0 1px 0; */
+	    padding: 0px;
+    }
+    .infoDescription p a {
+	    font-weight: bold;
+	    text-decoration: none;
+	    color: #7B044B;
+    }
+
+#sidebar .pages {
+	margin-left: 3px;
+    padding: 0px 0px 15px 30px;
+}
+#sidebar .pages ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+#sidebar .pages li {
+	font-size: 100%;
+	line-height: 15px;
+	list-style-image: none;
+	list-style-type: none;
+	margin: 10px 0px 0px 0px;
+}
+#sidebar .pages li a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #11430D;
+	/* text-shadow: #FFFFFF 0 1px 0; */
+	padding: 0 0 2px 22px;
+	background: url('http://static.tumblr.com/cfv4iiv/cHQmh7bvd/ico-pages-links.png') no-repeat 0 2px;
+}
+
+
+#sidebar #nav {
+	position: relative; z-index: 10;
+	color: #3f3f3f;
+	padding: 10px 0px;
+}
+#sidebar #nav ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	overflow: hidden;
+ *zoom: 1;
+}
+#sidebar #nav ul li 
+{
+	list-style-image: none;
+	list-style-type: none;
+	margin-left: 0px;
+	white-space: nowrap;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#sidebar #nav li {
+	font-size: 108%;
+}
+#sidebar #nav #nav_subscribe a { border-right: none; }
+#sidebar #nav a {
+	font-family: "ErnestineOffc";
+	font-size: 25px;
+	color: #11430D;
+	/* text-shadow: #FFFFFF 0 1px 0; */
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+	height: 31px;
+	overflow: hidden;
+	line-height: 30px;
+	padding: 0px;
+}
+#sidebar #nav a:link, #header #nav a:visited { color: #11430D; text-decoration: none; }
+#sidebar #nav a:hover { color: #a4cd39; text-decoration: none; }
+
+
+#main {
+    position: relative;
+    z-index: 1;
+	display: inline;
+	float: right;
+	width: 970px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+
+#main .posts {
+	padding: 0px 0px 36px 0px;
+    /* background: url('http://static.tumblr.com/cfv4iiv/v93mh7cxo/notebook-bottom.png') no-repeat left bottom; */
+}
+.ie6 #main .posts, .ie7 #main .posts {
+	display: inline-block;
+}
+#main .posts .wrapper {
+	/* padding: 15px 76px 10px 316px; */
+	position: relative;
+	/* background: url('http://static.tumblr.com/cfv4iiv/zdRmh7cwj/notebook-background.png') repeat-y; */
+    min-height: 800px;
+}
+#main .posts .wrapper h1 {
+	padding-left: 35px;
+	font-family: "TradeGothic-Bold", "TradeGothicLT-BoldCondTwenty";
+	font-size: 90px;
+	font-weight: normal;
+	color: #7B044B;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	/* text-shadow: #d3b792 0 1px 1px, #3b332b 0 -1px 0; */
+	margin: 0 0 10px 3px;
+}
+#main .posts .wrapper h1 a, #main .posts .wrapper h1 a:link, #main .posts .wrapper h1 a:visited { color: #7B044B; text-decoration: none; }
+#main .posts .wrapper h1 a:hover { color: #a4cd39; text-decoration: none; }
+
+
+
+
+#main .paging {
+  *zoom: 1; 
+	padding: 3px 10px 20px 10px;
+    height: 113px;
+    width: 970px;
+    clear: both;
+}
+#main .paging:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}
+#main .paging a {
+    font-family: "ErnestineOffc"; 
+	font-size: 100%;
+	line-height: 20px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.pagingArrows {
+	clear: both;
+	overflow: hidden;
+	padding: 10px 25px 1.625em 25px;
+	width: 192px; /* width: 242px; */
+	height: 45px;
+	background: url('http://static.tumblr.com/cfv4iiv/DTUmh7dbf/previous-next.png') no-repeat;
+	margin-left: 316px;
+}
+.pagingArrows a {
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 2.2em;
+	color: #FFFFFF;
+}
+
+
+.pagingArrows .older a {
+	display: inline;
+	float: left;
+	padding: 0px;
+	border: none;
+}
+.pagingArrows .newer a {
+	display: inline;
+	float: right;
+	padding: 0px;
+	border: none;
+}
+#main .paging #aniHolder {
+    padding-top:10px; width: 970px; height:20px; text-align:center;
+}
+#main .paging #aniHolder div {
+    position: relative; width:100%; height:20px; text-align:center;
+    color: #f2f2f2;
+    font-size: 110%;
+}
+#main .paging #aniHolder div a {
+    font-family: "ErnestineOffc"; 
+    font-size: 110%;
+	text-transform: none;
+	text-decoration: none;
+	color: #FFFFFF;
+	text-shadow: #000000 0 1px 0;
+    letter-spacing: 2px;	
+}
+#main .paging #aniHolder div a:hover {
+	color: #FFFFFF;
+}
+
+
+span.div:last-child {
+	display: none;
+}
+.post, .post-link, .post-regular, .post-answer, .post-quote, .post-photo, .post-photoset, .post-video, .post-audio, .post-chat {
+	position: relative;
+ *zoom: 1;
+	padding: 15px 0 28px 0;
+}
+.post:after, .post-link:after, .post-regular:after, .post-answer:after, .post-quote:after, .post-photoset:after, .post-photo:after, .post-video:after, .post-audio:after, .post-chat:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}
+.post-regular .page-arrow {
+	width: 149px;
+	height: 56px;
+	background: url('http://static.tumblr.com/cfv4iiv/pX4mh7bpl/date-arrow.png') no-repeat; 
+	position: absolute;
+	top: 7px;
+	left: -130px;
+	text-align: center;
+	z-index: 2;
+}
+.post-regular .ask-arrow {
+	width: 149px;
+	height: 56px;
+	background: url('http://static.tumblr.com/cfv4iiv/pX4mh7bpl/date-arrow.png') no-repeat;
+	position: absolute;
+	top: 7px;
+	left: -130px;
+	text-align: center;
+	z-index: 2;
+}
+
+
+.post .post-icon, .post-link .post-icon, .post-regular .post-icon, .post-answer .post-icon, .post-quote .post-icon, .post-photoset .post-icon, .post-photo .post-icon, .post-video .post-icon, .post-audio .post-icon, .post-chat .post-icon {
+	width: 156px;
+	height: 23px;
+	background: url('http://static.tumblr.com/cfv4iiv/pX4mh7bpl/date-arrow.png') no-repeat;
+	position: absolute;
+	top: -10px;
+	left: -15px;
+	text-align: center;
+	z-index: 2;
+}
+
+
+/* Icons based on type of post*/
+.post-icon-type 
+{
+    width: 100%;
+    height: 40px;
+    padding-left: 25px;
+    padding-top: 4px;
+}
+
+.post-regular .post-icon-type {
+    background: transparent url('http://static.tumblr.com/cfv4iiv/fynmh7d8l/post-type-regular.png') no-repeat 25px 4px;
+}
+.post-audio .post-icon-type {
+    background: transparent url('http://static.tumblr.com/cfv4iiv/myHmh7d2i/post-type-audio.png') no-repeat 25px 4px;
+}
+.post-chat .post-icon-type {
+    background: transparent url('http://static.tumblr.com/cfv4iiv/bhQmh7d3m/post-type-chat.png') no-repeat 25px 4px;
+}
+.post-link .post-icon-type {
+    background: transparent url('http://static.tumblr.com/cfv4iiv/weAmh7d4j/post-type-link.png') no-repeat 25px 4px;
+}
+.post-quote .post-icon-type, .post-answer .post-icon-type {
+    background: transparent url('http://static.tumblr.com/cfv4iiv/zHsmh7d5j/post-type-quote.png') no-repeat 25px 4px;
+}
+
+
+.post .date, .post-link .date, .post-regular .date, .post-answer .date, .post-quote .date, .post-photoset .date, .post-photo .date, .post-video .date, .post-audio .date, .post-chat .date {
+	width: 140px;
+	height: 22px;
+    position: relative;
+	top: 0px;
+	left: 10px;
+	text-align: left;
+	z-index: 2;
+}
+.post .date .day, .post-link .date .day, .post-regular .date .day, .post-answer .date .day, .post-quote .date .day, .post-photoset .date .day, .post-photo .date .day, .post-video .date .day, .post-audio .date .day, .post-chat .date .day {
+	padding: 3px 0px 0 10px;
+    font-family: "TradeGothic-Bold", "TradeGothicLT-BoldCondTwenty"; 
+    font-size: 100%;
+	text-transform: none;
+	text-decoration: none;
+	color: #FFFFFF;
+    text-transform: uppercase;
+}
+/*
+.dayArcher {
+	font-family: "ErnestineOffc-Italic";
+	font-weight: normal;
+	font-size: 18px;
+	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+	color: #FFFFFF;
+	padding: 0px 2px 0 2px;
+}
+*/
+.post .post-header h3, .post-link .post-header h3, .post-regular .post-header h3, .post-answer .post-header h3, .post-quote .post-header h3, .post-photoset .post-header h3, .post-photo .post-header h3, .post-video .post-header h3, .post-audio .post-header h3, .post-chat .post-header h3 {
+	font-family: "ErnestineOffc-Italic";
+	font-weight: normal;
+	font-size: 200%;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+	color: #7B044B;
+	padding: 3px 25px 5px 25px;
+	/* text-shadow: #ffffff 0 1px 0; */
+}
+.post .post-header h3 a, .post-link .post-header h3 a, .post-regular .post-header h3 a, .post-answer .post-header h3 a, .post-quote .post-header h3 a, .post-photoset .post-header h3 a, .post-photo .post-header h3 a, .post-video .post-header h3 a, .post-audio .post-header h3 a, .post-chat .post-header h3 a {
+	color: #7B044B;
+	text-decoration: none;
+}
+.post .post-content, .post-link .post-content, .post-regular .post-content, .post-answer .post-content, .post-quote .post-content, .post-photoset .post-content, .post-photo .post-content, .post-video .post-content, .post-audio .post-content, .post-chat .post-content {
+	padding: 0 25px 0 25px;
+}
+.post .post-content li, .post-link .post-content li, .post-regular .post-content li, .post-answer .post-content li, .post-quote .post-content li, .post-photoset .post-content li, .post-photo .post-content li, .post-video .post-content li, .post-audio .post-content li, .post-chat .post-content li {
+	font-size: 124%;
+	line-height: 1.4;
+}
+.post .post-content p, .post-link .post-content p, .post-regular .post-content p, .post-answer .post-content p, .post-quote .post-content p, .post-photoset .post-content p, .post-photo .post-content p, .post-video .post-content p, .post-audio .post-content p, .post-chat .post-content p {
+	font-size: 124%;
+	line-height: 1.4;
+	margin: 0 0 1em 0;
+}
+.post .post-content .caption p, .post-link .post-content .caption p, .post-regular .post-content .caption p, .post-answer .post-content .caption p, .post-quote .post-content .caption p, .post-photoset .post-content .caption p, .post-photo .post-content .caption p, .post-video .post-content .caption p, .post-audio .post-content .caption p, .post-chat .post-content .caption p {
+	/* text-shadow: white 0 1px 0; */
+}
+.post .post-content .caption p:last-child, .post-link .post-content .caption p:last-child, .post-regular .post-content .caption p:last-child, .post-answer .post-content .caption p:last-child, .post-quote .post-content .caption p:last-child, .post-photoset .post-content .caption p:last-child, .post-photo .post-content .caption p:last-child, .post-video .post-content .caption p:last-child, .post-audio .post-content .caption p:last-child, .post-chat .post-content .caption p:last-child {
+	margin-bottom: 0.6em;
+}
+.post .post-meta, .post-link .post-meta, .post-answer .post-meta, .post-regular .post-meta, .post-quote .post-meta, .post-photoset .post-meta, .post-photo .post-meta, .post-video .post-meta, .post-audio .post-meta, .post-chat .post-meta {
+	padding: 0 25px 0 25px;
+	text-align: left;
+}
+.post .notes, .post-link .notes, .post-regular .notes, .post-answer .notes, .post-quote .notes, .post-photoset .notes, .post-photo .notes, .post-video .notes, .post-audio .notes, .post-chat .notes {
+	padding: 0 22px 0 0;
+	font-family: "ErnestineOffc";
+	font-size: 116%;
+	/* text-shadow: #ffffff 0 1px 0; */
+	color: #7B044B;
+	text-decoration: none;
+}
+body.permalink .post .notes, body.permalink .post-link .notes, body.permalink .post-regular .notes, body.permalink .post-answer .notes, body.permalink .post-quote .notes, body.permalink .post-photoset .notes, body.permalink .post-photo .notes, body.permalink .post-video .notes, body.permalink .post-audio .notes, body.permalink .post-chat .notes {
+	display:none
+}
+.post .tags, .post-link .tags, .post-regular .tags, .post-answer .tags, .post-quote .tags, .post-photoset .tags, .post-photo .tags, .post-video .tags, .post-audio .tags, .post-chat .tags {
+	font-family: "ErnestineOffc";
+	font-size: 120%;
+	color: #589892;
+	/* text-shadow: #D4D0C8 0 1px 0; */
+}
+.post .tags a, .post-link .tags a, .post-regular .tags a, .post-answer .tags a, .post-quote .tags a, .post-photoset .tags a, .post-photo .tags a, .post-video .tags a, .post-audio .tags a, .post-chat .tags a {
+	color: #589892;
+	text-decoration: none;
+}
+.post-regular p, .post-regular li {
+	/* text-shadow: #fff 0 1px 0; */
+}
+.post-regular ul, .post-regular ol {
+	margin-left: 2em;
+	margin-bottom: 1em;
+}
+.post-regular p:last-child, .post-regular ul:last-child, .post-regular ol:last-child {
+	margin-bottom: 0.6em;
+}
+.post-link .post-content {
+	margin: 0 25px 0 25px;
+	padding: 0 0 10px 0;
+	position: relative;
+	font-size: 124%;
+	/* background: url('http://static.tumblr.com/cfv4iiv/HJ9mh7dcp/quote-shadow.png') no-repeat 0 bottom; */
+}
+.post-link .link-shadow {
+	/*
+    border-top: 1px solid #dddad4;
+	border-right: 1px solid #dddad4;
+	border-left: 1px solid #dddad4;
+	border-bottom: 1px solid #93908b;
+    */
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	-o-border-radius: 1px;
+	-ms-border-radius: 1px;
+	-khtml-border-radius: 1px;
+}
+.post-link .link-shadow2 {
+	padding: 35px 25px 6px 28px;
+	border: 1px solid white;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	-o-border-radius: 1px;
+	-ms-border-radius: 1px;
+	-khtml-border-radius: 1px;
+	border-radius: 1px;
+	background: #FFFDF0 url('http://static.tumblr.com/cfv4iiv/weAmh7d4j/post-type-link.png') no-repeat 25px 4px;
+ *zoom: 1;
+}
+.post-link .link-shadow2:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}
+.post-link h3 {
+	color: #7B044B;
+	font-weight: bold;
+	font-size: 123%;
+	margin: 0 0 0.75em 0;
+}
+.post-link h3 a {
+	color: #7B044B;
+	font-weight: bold;
+	text-decoration: none;
+}
+.post-quote .post-content {
+	margin: 0 25px 0 25px;
+	padding: 0 0 10px 0;
+	position: relative;
+	/* background: url('http://static.tumblr.com/cfv4iiv/HJ9mh7dcp/quote-shadow.png') no-repeat 0 bottom; */
+}
+.post-quote .quote-shadow {
+/*
+	border-top: 1px solid #dddad4;
+	border-right: 1px solid #dddad4;
+	border-left: 1px solid #dddad4;
+	border-bottom: 1px solid #93908b;
+*/
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	-o-border-radius: 1px;
+	-ms-border-radius: 1px;
+	-khtml-border-radius: 1px;
+	background: #f2f2f2 url('http://static.tumblr.com/cfv4iiv/zHsmh7d5j/post-type-quote.png') no-repeat 4px 4px;
+}
+.post-quote .quote-shadow2 {
+	padding: 30px 25px 12px 25px;
+	border: 1px solid white;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	-o-border-radius: 1px;
+	-ms-border-radius: 1px;
+	-khtml-border-radius: 1px;
+	border-radius: 1px;
+	background: #f2f2f2 url('http://static.tumblr.com/cfv4iiv/zHsmh7d5j/post-type-quote.png') no-repeat 25px 4px; 
+ *zoom: 1;
+}
+.post-quote .quote-shadow2:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}
+.post-quote .post-content blockquote {
+	font-size: 124%;
+	line-height: 1.4;
+	margin-bottom: 4px;
+}
+.post-quote .post-content cite {
+	display: block;
+	font-size: 100%;
+	line-height: 1.3;
+	color: #727272;
+}
+/*
+.post-quote .post-content .tape {
+	position: absolute;
+	right: -25px;
+	bottom: -15px;
+	width: 81px;
+	height: 52px;
+	background: url('http://static.tumblr.com/cfv4iiv/oedmh7dwu/tape.png') no-repeat;
+}
+/*
+.post-answer .question-content {
+	margin: 0 25px 0 25px;
+	padding: 0 0 10px 0;
+	position: relative;
+	/* background: url('http://static.tumblr.com/cfv4iiv/HJ9mh7dcp/quote-shadow.png') no-repeat 0 bottom; */
+}
+.post-answer .quote-shadow {
+	border-top: 1px solid #dddad4;
+	border-right: 1px solid #dddad4;
+	border-left: 1px solid #dddad4;
+	border-bottom: 1px solid #93908b;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	-o-border-radius: 1px;
+	-ms-border-radius: 1px;
+	-khtml-border-radius: 1px;
+}
+.post-answer .quote-shadow2 {
+	padding: 30px 25px 12px 45px;
+	border: 1px solid white;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	-o-border-radius: 1px;
+	-ms-border-radius: 1px;
+	-khtml-border-radius: 1px;
+	border-radius: 1px;
+	background: #f2f2f2 url('http://static.tumblr.com/cfv4iiv/zHsmh7d5j/post-type-quote.png') no-repeat 45px 4px;
+ *zoom: 1;
+}
+.post-answer .quote-shadow2:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}
+.post-answer .question-content blockquote {
+	font-size: 124%;
+	line-height: 1.4;
+	margin-bottom: 4px;
+}
+.post-answer .question-content cite {
+	display: block;
+	font-size: 100%;
+	line-height: 1.3;
+	color: #727272;
+}
+.post-answer .post-content p:last-child {
+	margin-bottom: 0;
+}
+.post-photo .date {
+	/* top: 17px; */
+}
+.post-photo .post-content {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.post-photo .post-content .caption {
+	padding: 0 17px 0 16px;
+}
+.post-photo .post-content .image {
+	position: relative;
+	padding: 0 17px 0 16px;
+	margin: 0 0 -5px 0;
+}
+.post-photo .post-content .image img {
+	float: left;
+	display: inline;
+    padding: 8px;
+    background-color: #FFFFFF;
+}
+.post-photo .post-content .image .image-shadow-top .image-shadow img {
+	width: 372px;
+}
+.post-photo .post-content .image-shadow-top {
+	padding: 10px 0 0 0;
+	background: url('http://static.tumblr.com/cfv4iiv/cXnmh7d1c/photo-top-shadow.png') no-repeat 5px 1px;
+}
+.post-photo .post-content .image-shadow-left {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 16px;
+	bottom: 0;
+}
+.post-photo .post-content .image-shadow-left .top {
+	position: absolute;
+	/* background: url('http://static.tumblr.com/cfv4iiv/E7Smh7cuz/left-shadow-top.png') no-repeat; */
+	height: 123px;
+	width: 16px;
+	top: 9px;
+	left: 0;
+}
+.post-photo .post-content .image-shadow-left .middle {
+	position: absolute;
+	/* background: url('http://static.tumblr.com/cfv4iiv/AHQmh7ctd/left-shadow-middle.png') repeat-y; */
+	width: 17px;
+	top: 132px;
+	bottom: 132px;
+	left: 0;
+}
+.post-photo .post-content .image-shadow-left .bottom {
+	position: absolute;
+	/* background: url('http://static.tumblr.com/cfv4iiv/yEamh7c14/left-shadow-bottom.png') no-repeat; */
+	height: 113px;
+	width: 16px;
+	bottom: 19px;
+	left: 0;
+}
+.post-photo .post-content .image-shadow-right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 17px;
+	bottom: 0;
+}
+.post-photo .post-content .image-shadow-right .top {
+	position: absolute;
+	/* background: url('http://static.tumblr.com/cfv4iiv/YASmh7dk8/right-shadow-top.png') no-repeat; */
+	height: 121px;
+	width: 17px;
+	top: 9px;
+	left: 0;
+}
+.post-photo .post-content .image-shadow-right .middle {
+	position: absolute;
+	/* background: url('http://static.tumblr.com/cfv4iiv/2qvmh7dij/right-shadow-middle.png') repeat-y; */
+	width: 17px;
+	top: 130px;
+	bottom: 142px;
+	left: 0;
+}
+.post-photo .post-content .image-shadow-right .bottom {
+	position: absolute;
+	/* background: url('http://static.tumblr.com/cfv4iiv/jQQmh7dh2/right-shadow-bottom.png') no-repeat; */
+	height: 123px;
+	width: 17px;
+	bottom: 19px;
+	left: 0;
+}
+.post-photo .post-content .image-shadow {
+	padding: 0 0 19px 0;
+	background: url('http://static.tumblr.com/cfv4iiv/6Wkmh7czy/photo-bottom-shadow.png') no-repeat bottom center;
+ *zoom: 1;
+}
+.post-photo .post-content .image-shadow:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}
+.post-video .date {
+	/* top: 17px; */
+}
+.post-video .post-content {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: -5px;
+}
+.post-video .post-content .caption {
+	padding: 0 17px 0 16px;
+}
+.post-video .post-content .video {
+	position: relative;
+	padding: 0 17px 0 16px;
+	margin-bottom: -5px;
+}
+.post-video .post-content video, .post-video .post-content iframe, .post-video .post-content object, .post-video .post-content embed {
+	background: #807f7c;
+	float: left;
+	display: inline;
+}
+.post-video .post-content .video-shadow-left {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 16px;
+	bottom: 0;
+}
+.post-video .post-content .video-shadow-left .top {
+	position: absolute;
+	/* background: url('http://static.tumblr.com/cfv4iiv/E7Smh7cuz/left-shadow-top.png') no-repeat; */
+	height: 123px;
+	width: 16px;
+	top: 9px;
+	left: 0;
+}
+.post-video .post-content .video-shadow-left .middle {
+	position: absolute;
+	/* background: url('http://static.tumblr.com/cfv4iiv/AHQmh7ctd/left-shadow-middle.png') repeat-y; */
+	width: 17px;
+	top: 132px;
+	bottom: 132px;
+	left: 0;
+}
+.post-video .post-content .video-shadow-left .bottom {
+	position: absolute;
+	/* background: url('http://static.tumblr.com/cfv4iiv/yEamh7c14/left-shadow-bottom.png') no-repeat; */
+	height: 113px;
+	width: 16px;
+	bottom: 19px;
+	left: 0;
+}
+.post-video .post-content .video-shadow-right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 17px;
+	bottom: 0;
+}
+.post-video .post-content .video-shadow-right .top {
+	position: absolute;
+	/* background: url('http://static.tumblr.com/cfv4iiv/YASmh7dk8/right-shadow-top.png') no-repeat; */
+	height: 121px;
+	width: 17px;
+	top: 9px;
+	left: 0;
+}
+.post-video .post-content .video-shadow-right .middle {
+	position: absolute;
+	/* background: url('http://static.tumblr.com/cfv4iiv/2qvmh7dij/right-shadow-middle.png') repeat-y; */
+	width: 17px;
+	top: 130px;
+	bottom: 142px;
+	left: 0;
+}
+.post-video .post-content .video-shadow-right .bottom {
+	position: absolute;
+	/* background: url('http://static.tumblr.com/cfv4iiv/jQQmh7dh2/right-shadow-bottom.png') no-repeat; */
+	height: 123px;
+	width: 17px;
+	bottom: 19px;
+	left: 0;
+}
+.post-video .post-content .video-shadow-top {
+	padding: 10px 0 0 0;
+	background: url('http://static.tumblr.com/cfv4iiv/cXnmh7d1c/photo-top-shadow.png') no-repeat;
+}
+.post-video .post-content .video-shadow {
+	padding: 0 0 20px 0;
+	background: url('http://static.tumblr.com/cfv4iiv/6Wkmh7czy/photo-bottom-shadow.png') no-repeat bottom center;
+ *zoom: 1;
+}
+.post-video .post-content .video-shadow:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}
+.post-photoset .date {
+	/* top: 17px; */
+}
+.post-photoset .post-content {
+	padding-left: 20px;
+	padding-right: 25px;
+}
+.post-photoset .post-content .caption {
+	padding: 0 17px 0 16px;
+}
+.post-photoset .post-content .image {
+	position: relative;
+	padding: 0 17px 0 16px;
+	margin-bottom: -5px;
+}
+.post-photoset .post-content object, .post-photoset .post-content embed {
+	float: left;
+	display: inline;
+}
+.post-photoset .post-content .image-shadow-left {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 16px;
+	bottom: 0;
+}
+.post-photoset .post-content .image-shadow-left .top {
+	position: absolute;
+	/* background: url('http://static.tumblr.com/cfv4iiv/E7Smh7cuz/left-shadow-top.png') no-repeat; */
+	height: 123px;
+	width: 16px;
+	top: 9px;
+	left: 0;
+}
+.post-photoset .post-content .image-shadow-left .middle {
+	position: absolute;
+	/* background: url('http://static.tumblr.com/cfv4iiv/AHQmh7ctd/left-shadow-middle.png') repeat-y; */
+	width: 17px;
+	top: 132px;
+	bottom: 132px;
+	left: 0;
+}
+.post-photoset .post-content .image-shadow-left .bottom {
+	position: absolute;
+	/* background: url('http://static.tumblr.com/cfv4iiv/yEamh7c14/left-shadow-bottom.png') no-repeat; */
+	height: 113px;
+	width: 16px;
+	bottom: 19px;
+	left: 0;
+}
+.post-photoset .post-content .image-shadow-right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 17px;
+	bottom: 0;
+}
+.post-photoset .post-content .image-shadow-right .top {
+	position: absolute;
+	/* background: url('http://static.tumblr.com/cfv4iiv/YASmh7dk8/right-shadow-top.png') no-repeat; */
+	height: 121px;
+	width: 17px;
+	top: 9px;
+	left: 0;
+}
+.post-photoset .post-content .image-shadow-right .middle {
+	position: absolute;
+	/* background: url('http://static.tumblr.com/cfv4iiv/2qvmh7dij/right-shadow-middle.png') repeat-y; */
+	width: 17px;
+	top: 130px;
+	bottom: 142px;
+	left: 0;
+}
+.post-photoset .post-content .image-shadow-right .bottom {
+	position: absolute;
+	/* background: url('http://static.tumblr.com/cfv4iiv/jQQmh7dh2/right-shadow-bottom.png') no-repeat; */
+	height: 123px;
+	width: 17px;
+	bottom: 19px;
+	left: 0;
+}
+.post-photoset .post-content .image-shadow-top {
+	padding: 10px 0 0 0;
+	background: url('http://static.tumblr.com/cfv4iiv/cXnmh7d1c/photo-top-shadow.png') no-repeat;
+}
+.post-photoset .post-content .image-shadow {
+	padding: 0 0 20px 0;
+	background: url('http://static.tumblr.com/cfv4iiv/6Wkmh7czy/photo-bottom-shadow.png') no-repeat bottom center;
+ *zoom: 1;
+}
+.post-photoset .post-content .image-shadow:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}
+.post-audio .post-content {
+	margin: 0 25px 0 25px;
+	padding: 0 0 10px 0;
+	position: relative;
+	/* background: url('http://static.tumblr.com/cfv4iiv/HJ9mh7dcp/quote-shadow.png') no-repeat 0 bottom; */
+}
+/*
+.post-audio .audio-shadow {
+	border-top: 1px solid #dddad4;
+	border-right: 1px solid #dddad4;
+	border-left: 1px solid #dddad4;
+	border-bottom: 1px solid #93908b;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	-o-border-radius: 1px;
+	-ms-border-radius: 1px;
+	-khtml-border-radius: 1px;
+}
+
+.post-audio .audio-shadow2 {
+	padding: 0 0 20px 25px;
+	border: 1px solid white;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	-o-border-radius: 1px;
+	-ms-border-radius: 1px;
+	-khtml-border-radius: 1px;
+	border-radius: 1px;
+	background: #fffdf0;
+ *zoom: 1;
+}
+
+.post-audio .audio-shadow2:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}
+*/
+.post-audio .post-content .album-art {
+	display: inline;
+	float: right;
+	width: 95px;
+	height: 95px;
+	background: url('http://static.tumblr.com/cfv4iiv/h4pmh7bmx/album-shadow.png') no-repeat;
+	padding: 0 7px 13px 0;
+	margin: -18px 0 -5px 0;
+}
+.post-audio .post-content .player {
+	float: left;
+	display: inline;
+	padding: 15px 0 0 0;
+}
+.post-audio .post-content .audio_player {
+	-moz-box-shadow: #908d7c 0 1px 2px;
+	-webkit-box-shadow: #908d7c 0 1px 2px;
+	-o-box-shadow: #908d7c 0 1px 2px;
+	box-shadow: #908d7c 0 1px 2px;
+	padding: 1px;
+	height: 27px;
+}
+.post-audio .post-content .playcount {
+	float: left;
+	display: inline;
+	margin: 22px 0 0 8px;
+	font-size: 84%;
+	font-weight: bold;
+	color: #a2a2a2;
+}
+.post-audio .post-content .caption {
+	padding: 10px 0 10px 0;
+}
+.post-audio .post-content .caption p {
+	font-size: 107%;
+	color: #333333;
+}
+.post-audio .post-content .caption p:last-child {
+	margin-bottom: 0;
+}
+.post-audio .post-content .tape {
+	position: absolute;
+	right: -25px;
+	bottom: -15px;
+	width: 81px;
+	height: 52px;
+	background: url('http://static.tumblr.com/cfv4iiv/oedmh7dwu/tape.png') no-repeat;
+}
+.post-chat .post-content {
+	margin: 5px 0 8px 0;
+	position: relative;
+	font-size: 124%;
+ *zoom: 1;
+ 
+}
+.post-chat .post-content:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}
+.post-chat .post-content table {
+	width: 100%;
+}
+.post-chat .post-content th {
+	text-align: right;
+	white-space: nowrap;
+	padding: 0 0 1em 0;
+}
+.post-chat .post-content th .badge {
+	border: 1px solid #dddad4;
+	border-bottom: 1px solid #b3b1ab;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	width: 100%;
+	background: white;
+	-moz-box-shadow: #e0ddd7 0 1px 0;
+	-webkit-box-shadow: #e0ddd7 0 1px 0;
+	-o-box-shadow: #e0ddd7 0 1px 0;
+	box-shadow: #e0ddd7 0 1px 0;
+}
+.post-chat .post-content th .badge .badge-inner {
+	margin: 2px;
+	background: url('http://static.tumblr.com/cfv4iiv/injmh7boj/chat-background.png') repeat-x;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	color: #7B044B;
+	font-weight: bold;
+	line-height: 26px;
+	/* text-shadow: #ffffff 0 1px 0; */
+	padding: 0 10px;
+}
+.post-chat .post-content td {
+	padding: 0 0 1em 12px;
+}
+.post-chat .post-meta {
+	margin-top: -0.4em;
+}
+.disqus-container {
+	padding: 0 34px;
+}
+
+
+
+
+.article-notes {
+	padding: 0 34px;
+	margin: 0 0 28px 0;
+}
+.article-notes h4 {
+	font-size: 173%;
+	font-weight: normal;
+	font-family: "ErnestineOffc";
+	line-height: 27px;
+	padding-top: 2px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #7B044B;
+	/* text-shadow: white 0 1px 0; */
+}
+.article-notes ol {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.article-notes ol li {
+	list-style-image: none;
+	list-style-type: none;
+	font-size: 100%;
+	line-height: 28px;
+	height: 28px;
+	color: #333333;
+	padding: 0 0 0 35px;
+	/* text-shadow: white 0 1px 0; */
+	background: url('http://static.tumblr.com/cfv4iiv/iWFmh7bu4/ico-note.png') no-repeat 0 50%;
+}
+.article-notes ol li.reblog {
+	background: url('http://static.tumblr.com/cfv4iiv/8yTmh7bwj/ico-reblog.png') no-repeat 0 50%;
+}
+.article-notes ol li.like {
+	background: url('http://static.tumblr.com/cfv4iiv/hnimh7bsx/ico-like.png') no-repeat 0 50%;
+}
+.article-notes ol li .avatar {
+	display: none;
+}
+.article-notes ol li a {
+	font-weight: bold;
+	color: #333333;
+	text-decoration: none;
+}
+.article-notes ol li a:hover {
+	text-decoration: underline;
+}
+
+.shareAddThis {float:right;}
+.shareAddThis a {color: #666666; text-decoration: none;}
